@@ -1,0 +1,24 @@
+<div class="dashboard">
+    <nav class="nav-links">
+        <a routerLink="/addproduct" routerLinkActive="active">Add product</a>
+        <a routerLink="/displayproduct" routerLinkActive="active">Display product</a>
+    </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.pid}}</td>
+                <td>{{product.pname}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.brand}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

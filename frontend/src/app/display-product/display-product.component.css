@@ -1,0 +1,40 @@
+.dashboard{
+    padding: 24px;
+}
+.nav-links{
+    display: flex;
+    gap:24px;
+    margin-bottom: 24px;
+}
+.nav-links a{
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.form-row{
+    margin-bottom: 20px;
+}
+.form-row label{
+    display: inline-block;
+    width: 100px;
+}
+.add-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.add-btn:disabled{
+    background-color: rgb(32, 212, 71);
+    cursor:not-allowed;
+}
+table{
+    border-collapse: collapse;
+    width: 100%
+}
+th,td{
+    text-align: left;
+    padding: 8px 40px 8px 0;
+}

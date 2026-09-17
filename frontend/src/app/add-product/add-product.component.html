@@ -1,0 +1,25 @@
+<div class="dashboard">
+    <nav class = "nav-links">
+        <a routerLink="/addproduct" routerLinkActive="active">Add product</a>
+        <a routerLink="/displayproduct" routerLinkActive=""active>Display product</a>
+    </nav>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+            <label for="pid">PID</label>
+            <input id="pid" type="number" formControlName="pid">
+        </div>
+        <div class="form-row">
+            <label for="pname">Name</label>
+            <input id="pname" type="text" formControlName="pname">
+        </div>
+        <div class="form-row">
+            <label for="price">Price</label>
+            <input id="price" type="number" formControlName="price">
+        </div>
+        <div class="form-row">
+            <label for="brand">Brand</label>
+            <input id="brand" type="text" formControlName="brand">
+        </div>
+        <button type="submit" class="add-btn" [disabled]="productForm.invalid">Add Product</button>
+    </form>
+</div>
